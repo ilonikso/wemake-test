@@ -146,6 +146,9 @@ b, strong {
     background: #eab347;
     transform: translate3d(-100vw, 0, 0); }
 
+.container-sticky {
+  margin-top: 90px; }
+
 section.visible .title-line h2 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -208,6 +211,9 @@ section.visible .title-line h2 {
     width: 18px;
     height: 2px;
     background: #eab347; }
+
+.header__nav .link-active {
+  font-weight: 700; }
 
 .header .hamburger {
   display: none;
