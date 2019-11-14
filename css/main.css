@@ -46,10 +46,7 @@ body {
   overflow-x: hidden;
   background: #fff;
   font-family: proxima;
-  color: #2b2b2b;
-  max-width: 1440px;
-  margin: 0 auto;
-  outline: 1px solid red; }
+  color: #2b2b2b; }
 
 .overflow {
   position: relative;
@@ -297,6 +294,7 @@ section.visible .title-line h2 {
 .header__banner {
   padding: 0 20px;
   background: url("../img/banner.jpg") center center/cover;
+  background: url("../img/header-banner-new.jpg") center top/cover;
   opacity: 0; }
   .header__banner.visible {
     opacity: 1;
@@ -313,7 +311,7 @@ section.visible .title-line h2 {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    height: 90vh;
+    height: 96vh;
     min-height: 700px;
     max-height: 1024px;
     padding-top: 165px; }
@@ -356,6 +354,8 @@ section.visible .title-line h2 {
     min-height: 400px; }
     .header__banner-img.services {
       background: url("../img/services.jpg") center center/cover; }
+    .header__banner-img.contacts {
+      background: url("../img/contacts-banner.png") center center/cover; }
     .header__banner-img.about {
       background: url("../img/about.jpg") center center/cover; }
 
@@ -412,6 +412,7 @@ section.visible .title-line h2 {
   max-height: 950px;
   max-height: 700px;
   background: url("../img/can-do.jpg") center center/cover;
+  background: url("../img/can-do-new.jpg") center bottom/cover;
   overflow: hidden; }
   .we-can__banner h2 {
     transform: translate3d(-110%, 0, 0);
@@ -454,9 +455,11 @@ section.visible .title-line h2 {
       .we-do__list li:nth-child(2) .img {
         background: url("../img/we-do2.jpg") center center/cover; }
       .we-do__list li:nth-child(3) .img {
-        background: url("../img/we-do3.jpg") center center/cover; }
+        background: url("../img/we-do3.jpg") center center/cover;
+        background: url("../img/we-do-3-new.png") center center/cover; }
       .we-do__list li:nth-child(4) .img {
-        background: url("../img/we-do4.jpg") center center/cover; }
+        background: url("../img/we-do4.jpg") center center/cover;
+        background: url("../img/we-do-4-new.png") center top/cover; }
     .we-do__list .img {
       height: 150px; }
   .we-do.visible .we-do__list li {
@@ -518,6 +521,14 @@ section.visible .title-line h2 {
         background: url("../img/work2.jpg") center center/cover; }
       .work__list li:nth-child(3) {
         background: url("../img/work3.jpg") center center/cover; }
+      .work__list li:nth-child(4) {
+        background: url("../img/header-banner-new.jpg") center center/cover; }
+      .work__list li:nth-child(5) {
+        background: url("../img/work-5-new.png") center center/cover; }
+      .work__list li:nth-child(6) {
+        background: url("../img/work-6-new.png") center center/cover; }
+      .work__list li:nth-child(7) {
+        background: url("../img/work-new-7.png") center center/cover; }
       .work__list li:nth-child(2n) .container {
         align-items: flex-end; }
       .work__list li:nth-child(2n) .text__block {
@@ -549,7 +560,14 @@ section.visible .title-line h2 {
       width: 40px;
       height: 15px;
       margin-left: 15px;
-      background: url("../img/arrow.svg") no-repeat center center/contain; }
+      background: url("../img/arrow.svg") no-repeat center center/contain;
+      height: 30px;
+      margin-left: 6px;
+      position: relative;
+      top: 6px; }
+
+.work--services-page {
+  padding-top: 40px; }
 
 .contact {
   text-align: center;
@@ -567,8 +585,9 @@ section.visible .title-line h2 {
   .contact .button {
     margin-bottom: 25px; }
   .contact__list li {
-    padding: 0 10px;
-    display: inline-block; }
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 14px; }
     .contact__list li:first-child a::before {
       background: url("../img/mail.svg") no-repeat center center/contain; }
     .contact__list li:last-child a::before {
@@ -576,8 +595,8 @@ section.visible .title-line h2 {
   .contact__list a::before {
     display: inline-block;
     content: '';
-    width: 18px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
     margin-right: 10px;
     position: relative;
@@ -630,7 +649,7 @@ section.visible .title-line h2 {
     transform: translate3d(0, 100px, 0);
     opacity: 0; }
   .services-info__text--adress {
-    margin-top: -205px;
+    margin-top: -173px;
     margin-left: -50px;
     position: relative;
     left: -190px;
@@ -642,6 +661,10 @@ section.visible .title-line h2 {
     .services-info__text--adress span:nth-child(11) {
       margin-top: 7px;
       display: inline-block; }
+
+.services-info-about .services-info__text {
+  max-width: 415px;
+  margin-left: 20px; }
 
 .about-info__title {
   margin-bottom: 70px; }
@@ -736,7 +759,9 @@ section.visible .title-line h2 {
       width: 25%;
       width: 38.5%;
       margin-left: 145px;
+      margin-left: 10%;
       background: url("../img/team-left.jpg") center left/cover;
+      background: url("../img/team-left-new.png") center left/cover;
       margin-right: 45px;
       transform: translate3d(-200px, 0, 0);
       opacity: 0; }
@@ -1048,8 +1073,8 @@ section.visible .title-line h2 {
   .footer__social .linkedin::before {
     display: inline-block;
     content: '';
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: url("../img/linkedin.svg") no-repeat center center/contain;
     margin-right: 7px; }
   .footer__copyright p {
@@ -1103,6 +1128,9 @@ section.visible .title-line h2 {
       margin-bottom: 30px; }
   .team__wrapper .right {
     width: 75%; }
+  .team__wrapper .left {
+    margin-left: 0;
+    width: 20%; }
   .contact-section {
     height: auto; }
     .contact-section__wrap {
@@ -1272,18 +1300,20 @@ section.visible .title-line h2 {
       .team__list li {
         width: 100%;
         margin-right: 0px;
+        margin: 0 auto;
         margin-bottom: 40px;
-        padding-top: 300px; }
+        padding-top: 300px;
+        max-width: 450px; }
         .team__list li::before {
           display: none; }
         .team__list li:nth-child(1) {
-          background: url("/wemake/img/team1.jpg") no-repeat top center/120% auto; }
+          background: url("../img/team1.jpg") no-repeat top center/100% auto; }
         .team__list li:nth-child(2) {
-          background: url("/wemake/img/team2.jpg") no-repeat 30% 0/130% auto; }
+          background: url("../img/team2.jpg") no-repeat 20% 0/110% auto; }
         .team__list li:nth-child(3) {
-          background: url("/wemake/img/team3.jpg") no-repeat top center/120% auto; }
+          background: url("../img/team3.jpg") no-repeat top center/100% auto; }
         .team__list li:nth-child(4) {
-          background: url("/wemake/img/team4.jpg") no-repeat top center/120% auto; }
+          background: url("../img/team4.jpg") no-repeat top center/100% auto; }
         .team__list li:nth-child(3) {
           margin-bottom: 40px; }
         .team__list li:last-child {
