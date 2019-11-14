@@ -213,7 +213,7 @@ section.visible .title-line h2 {
     background: #eab347; }
 
 .header__nav .link-active {
-  font-weight: 700; }
+  font-weight: bold; }
 
 .header .hamburger {
   display: none;
